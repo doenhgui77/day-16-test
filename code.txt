@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b; 
+  int *ptr = &a;
+  int *pInt = &b;
+  int tmp;
+  scanf("%d %d", &a, &b);
+  tmp = *ptr;
+  *ptr = *pInt;
+  *pInt = tmp;
+  printf("%d %d", a, b);
+  return 0;
+}
